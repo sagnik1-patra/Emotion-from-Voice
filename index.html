@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Emotion Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #4CAF50;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎤 Live Emotion Detection</h1>
+    <button onclick="startRecording()">Start</button>
+    <div id="result">🔊 Waiting for your voice...</div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
